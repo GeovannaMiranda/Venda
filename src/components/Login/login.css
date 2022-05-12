@@ -1,0 +1,55 @@
+.Campo-body{
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+
+}
+body{
+    background: #006400;
+}
+
+h3{
+    color: #fff;
+}
+.titulo{
+    margin-left: 35%;
+    margin-top: -5%;
+}
+p{
+    color: #fff;
+    font-size: 9px;
+    font-family: sans-serif;
+}
+.Campo-email-senha{
+    display: grid;
+    justify-content: center;
+    margin-top: 14rem;
+}
+#email{
+  border-left: none;
+  border-right: none;
+  background: none;
+  border-top: none;
+  color: #fff;
+  border-color: #fff;
+  width: 20rem;
+  
+}
+Label{
+    color: #fff;
+    font-family: sans-serif;
+}
+.senha{
+    margin-top: 15px;
+}
+#botao{
+    color: #006400;
+    background-color: #fff;
+    width: 50%;
+    height: 70%;
+    font-size: small;
+}
+.posicao-botao{
+    margin-left: 30%;
+    margin-top: 5%;
+}
