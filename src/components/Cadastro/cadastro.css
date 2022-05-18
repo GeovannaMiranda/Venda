@@ -1,0 +1,32 @@
+#pcadastro{
+    font-size: 22px;
+    font-family: sans-serif;
+    color: #006400;
+}
+.card-cadastro{
+    display: grid;
+    justify-content: center;
+    background: #C1FFC1;
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+#cad-card{
+    width: 50rem;
+    height: 30rem;
+    border-radius: 5%;
+}
+.linha1{
+    display: flex;
+    justify-content: space-between;
+}
+.campo2{
+    margin-left: 4%;
+}
+#pcard{
+    font-size: 12px;
+}
+
+#botao-cadastro{
+    color: #ffff;
+    background: #006400;
+}

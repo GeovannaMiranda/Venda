@@ -1,0 +1,77 @@
+.campo-card-flex{
+   display: flex;
+   margin: 5%;
+}
+.card1{
+    display: grid;
+    margin-right: 2%;
+    margin-top: 1%;
+}
+
+.card-coluna3{
+    margin-left: 13%;
+    margin-top: -1%;
+}
+#cor-card-paganuncio{
+    background: #e0eeee;
+    width: 30rem;
+    height: 20rem;
+    border-radius: 5%;
+}
+.p-paganuncio{
+    display: flex;
+    justify-content: center;
+
+    
+}
+.caixa-de-texto{
+    display: grid;
+    margin-bottom: 3%;
+}
+.botao-enviarmsg{
+    display: grid;
+    justify-self: center;
+    margin-top: 4%;
+}
+#cor-botao-enviarmsg{
+    background: #006400;
+    color: #fff;
+    width: 10rem;
+}
+#card-linha2{
+    background: #e0eeee;
+    width: 35rem;
+    height: 15rem;
+    border-radius: 5%;
+}
+#p-sobre{
+    color: #006400;
+    font-size: 19px;
+}
+.linha{
+    display: flex;
+    justify-content: space-between;
+}
+.titulo-card-acessorio{
+    display: grid;
+
+}
+
+#tamanho-acordeao{
+    width: 35rem;
+}
+
+#card-contato{
+    background: #e0eeee;
+    width: 20rem;
+    border-radius: 5%;
+    height: 20rem;
+}
+.p-card-contato{
+   margin: 2% 0 0 19%;
+}
+
+.card-coluna4{
+    margin-left: 19%;
+    margin-top: -2%;
+}

@@ -1,0 +1,83 @@
+.card-anuncio{
+    display: grid;
+    justify-content: center;
+    margin-top: 10%;
+    
+}
+
+.campo-card-anuncio{
+    display: grid;
+    justify-content: center;
+}
+
+
+#cor-card-anuncio1{
+    background: #C1FFC1;
+    width: 60rem;
+    height: 10rem;
+    border-radius: 10px;
+}
+
+#cor-card-anuncio{
+    background: #bebebe;
+    width: 50rem;
+    height: 10rem;
+    border-radius: 10px;
+}
+
+#botao-anuncio{
+    background: #006400;
+    color: #fff;
+    width: 50%;
+    height: 45%;
+}
+.botao-anun{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+}
+.campo-regra{
+    display: grid;
+    justify-content: center;
+    margin-top: 13%;
+}
+#texto{
+    color: #708090;
+    font-family: sans-serif;
+}
+.titulo-regra{
+    margin-left: 36%;
+}
+
+.campo-cards-planos{
+    display: grid;
+    justify-content: center;
+}
+.campo-card-plano{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    justify-content: space-between;
+
+}
+#cor-card-anuncio{
+    background: #e0eeee;
+    width: 15rem;
+}
+.titulo-plano{
+    margin: 10% 0 0 33%;
+}
+#cor-plano{
+    color: #006400;
+}
+#rodape-anunicie{
+    background: #006400;
+    height: 8rem;
+}
+#botao-plano{
+    background: #006400;
+    color: #ffff;
+}
+.botao-card{
+    margin: 7% 0 0 18%;
+}

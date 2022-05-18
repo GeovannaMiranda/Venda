@@ -1,0 +1,225 @@
+.Corpo{
+    font-family: sans-serif;
+    overflow: none;
+}
+h2{
+    font-family: sans-serif;
+    color: #006400;
+}
+
+.pesquisa{
+    display: grid;
+    justify-content: center;
+}
+#mui-theme-provider-outlined-input{
+    width: 50rem;
+    height: 2rem;
+}
+#cor-titulo-veiculo{
+    color: #006400;
+    font-size: 18px;
+}
+#botao-veiculos{
+    color: #9c9c9c;
+}
+.campo-pesquisa-veiculo{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+ 
+}
+.caixaselecao{
+    margin: 0 10% 0 0;
+}
+.Marca{
+    margin-top: -0.7%;
+    margin-left: -6%;
+}
+#selecao{
+    width: 15rem;
+}
+.modelo{
+    margin-top: 3.5%;
+    margin-left: 2%;
+}
+.checkbox{
+    display: grid;
+}
+
+.cor{
+    color: #9c9c9c;
+}
+.campo-data{
+    margin-left: 10%;
+    margin-top: -1%;
+}
+.data{
+    margin-left: 3%;
+    margin-top: 3.2%;
+
+}
+
+.campo-preco{
+    display: flex;
+    margin-left: 13%;
+    margin-top: -1.7%;
+}
+
+.minimo{
+    margin-top: 2%;
+    margin-left: -26%;
+}
+
+.maximo{
+    margin-left: 4%;
+    margin-top: 14.5%;
+}
+#tamanho{
+    width: 13rem;
+
+}
+#tamanho-max{
+    width: 15rem;
+
+}
+
+.checkbox-coluna1{
+    display: grid;
+    margin-left: 19.5rem;
+}
+.checkbox-coluna2{
+    display: grid;
+    margin-right: 10rem;
+
+}
+
+
+#tamanho-pesquisa{
+    width: 22rem;
+
+}
+.botao-pesquisar-placa{
+    color: #fff;    
+    background: #006400;
+}
+#botao-placa{
+    color: #fff;
+    background: #006400;
+    width: 7rem;
+    height: 2rem;
+}
+.botao-pesquisar-placa:hover{
+    background: #006400;
+}
+.campo-card{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    justify-content: space-between;
+    padding: 8%;
+}
+
+.campo-cards{
+    display: flex;
+    justify-content: center;
+    margin-top: -6%;
+    justify-content: space-between;
+    padding: 8%;
+}
+#Cor{
+    background-color: #E0EEEE;
+    width: 10rem;
+    height: 15rem;
+    border-radius: 10%;
+}
+
+#descricao{
+    color: #006400;
+    text-align: center;
+}
+
+#cor-footer{
+    background: #006400;
+    height: 8rem;
+}
+
+.Rodape{
+    color: #fff;
+    display: grid;
+    justify-content: center;
+}
+
+#fonte{
+    font-size: 12px;
+    font-family: sans-serif
+}
+.Card-1{
+    display: grid; 
+    transition: all 0.5s;
+    cursor: pointer;
+
+ 
+}
+
+#botao-car1{
+    color: #fff;
+    background: #006400;
+    width: 5rem;
+    height: 2rem;
+   
+}
+.botao-card:hover{
+    background:#006400;
+}
+
+.paginacao{
+    display: flex;
+    justify-content: center;
+}
+
+#cor-check{
+    color: #9c9c9c;
+}
+.campo-placa{
+    display: flex;
+    margin-right: 30rem;
+  
+}
+.pesquisa-botao{
+    display: flex;
+
+}
+.part{
+    display: flex;
+    margin-left: 5rem;
+   
+}
+.part1{
+    display: flex;
+    margin-left: 10rem;  
+}
+.Imagem{
+    margin-top: 10%;
+    transition: all 1.5s;
+}
+.descricao-posicao{
+    display: grid;
+    justify-content: center;
+    cursor: pointer;
+ 
+}
+.Card{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.Card-1:hover{
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+   
+}
+
+.Card:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

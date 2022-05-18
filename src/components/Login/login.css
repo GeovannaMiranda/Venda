@@ -1,55 +1,81 @@
-.Campo-body{
-    padding: 0%;
-    margin: 0%;
-    font-family: sans-serif;
 
-}
-body{
-    background: #006400;
-}
-
-h3{
-    color: #fff;
-}
-.titulo{
-    margin-left: 35%;
-    margin-top: -5%;
-}
-p{
-    color: #fff;
-    font-size: 9px;
-    font-family: sans-serif;
-}
-.Campo-email-senha{
-    display: grid;
+.card-login{
+    display: flex;
     justify-content: center;
-    margin-top: 14rem;
-}
-#email{
-  border-left: none;
-  border-right: none;
-  background: none;
-  border-top: none;
-  color: #fff;
-  border-color: #fff;
-  width: 20rem;
+    background: #ffff;
+    margin-top: 40%;
   
 }
-Label{
-    color: #fff;
+.campo-email-senha{
+    display: grid;
+    justify-content:center;
+    margin-bottom: 25%;
+}
+.titulo-login{
+    display: flex;
+    justify-content: center;
+
+  
+}
+#titlle-login{
     font-family: sans-serif;
-}
-.senha{
-    margin-top: 15px;
-}
-#botao{
     color: #006400;
-    background-color: #fff;
-    width: 50%;
-    height: 70%;
-    font-size: small;
+    font-size: 32px;
 }
-.posicao-botao{
-    margin-left: 30%;
-    margin-top: 5%;
+.botaoentrar{
+    display: flex;
+    justify-self: center;
+}
+#botao-login{
+    background: #006400;
+    color: #fff;
+    width: 10rem;
+    height: 2rem;
+}
+
+.Corpo-login{
+    background: #006400;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+#tamanho-card-login{
+    width: 20rem;
+    height: 25rem;
+    border-radius: 5%;
+}
+.logo-telalogin{
+    display: flex;
+    margin-left: 200%;
+}
+
+#p-esquecisenha{
+    font-size: 11px;
+    color: #9c9c9c;
+}
+.campo-cadastrese{
+    display: flex;
+    justify-content:center;
+    margin-bottom: -8%;
+}
+#p-cadastre{
+    font-size: 14px;
+    color: #006400;
+}
+
+#botao-cadastrese{
+    font-size: 12px;
+    font-family: sans-serif;
+    color: #006400;
+    background: none;
+    width: 7rem;
+    height: 2rem;
+    margin-top: 3%;
+}
+
+@media only screen and (max-width: 768px){
+    .card-login{
+        display: flex;
+        justify-content: center;
+    }
 }

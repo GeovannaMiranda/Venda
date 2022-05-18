@@ -1,57 +1,69 @@
-import { TextField, Button } from "@mui/material";
 import React from "react";
+import style from "../Login/login.css";
+import { withStyles } from '@material-ui/styles';
+import { Button, ButtonBase, TextField } from '@mui/material';
+import { Card } from "reactstrap";
+import logo from '../img/logotora.png';
 
-import { Card, Input, Label, Media } from "reactstrap";
-import login from '../Login/login.css';
 
-function TelaLogin() {
-    /*
-        const CssTextField = withStyles({
-            root: {
-                "& label.Mui-focused" : {
-                    color : "white"
+
+function Login() {
+
+    const CssTextField = withStyles({
+        root: {
+            '& label.Mui-focused': {
+                color: 'green',
+            },
+            '& .MuiInput-underline:after': {
+                borderBottomColor: 'green',
+            },
+            '& .MuiOutlinedInput-root': {
+                '& fieldset': {
+                    borderColor: 'green',
                 },
-                "& label" : {
-                    color : "white"
+                '&:hover fieldset': {
+                    borderColor: 'green',
                 },
-                "& MuiInput_underline:before" :{
-                    borderBottomcolor : "white"
+                '&.Mui-focused fieldset': {
+                    borderColor: 'green',
                 },
-                "& MuiInput_underline:after" :{
-                    borderBottomcolor : "white"
-                },
-                "& MuiOutlinedInput-root" :{
-                    "& fildset" : {
-                        borderColor : "white"
-                    },
-                    "& :hover fildset :" : {
-                        borderColor : "white"
-                    },
-                    "& :Mui-focused fildset :" : {
-                        borderColor : "white"
-                    },
-                },
-    
-            }
-        })(TextField);
-    */
+            },
+        },
+    })(TextField);
+
     return (
-        <body className="Campo-body">
+        <div className="Corpo-login">
+            <div className="campo-login">
+                <Card className="card-login" id="tamanho-card-login">
+                    <div className="campo-email-senha">
+                        <p className="titulo-login" id="titlle-login">LOGIN</p>
+                        <CssTextField
+                            label="Email"
+                            placeholder="Seumail@example.com"
+                            variant="standard"
+                        />
+                        <CssTextField
+                            label="Senha"
+                            placeholder="*******"
+                            variant="standard"
+                        />
+                        <p id="p-esquecisenha">Esqueci minha senha</p>
+                        <Button id="botao-login" className="botaoentrar">Entrar</Button>
 
-            <div className="Campo-email-senha">
-                <h3 className="titulo">Login</h3>
-                <Label>Email:</Label>
-                <Input type="Email" id="email"></Input>
-                <Label className="senha">Senha:</Label>
-                <Input type="Email" id="email"></Input>
-                <p>Esqueci minha senha</p>
+                        <div className="campo-cadastrese">
+                            <p id="p-cadastre"><strong>Não possui Cadastro? </strong></p>
+                            <Button id="botao-cadastrese" className="altura-botao"><strong>Cadastre-se</strong></Button>
+                        </div>
+                    </div>
 
-                <div  className="posicao-botao">
-                    <Button id='botao'><strong>Entrar</strong></Button>
+                </Card>
+                <div className="logo-telalogin">
+                    <img src={logo} style={{ width: '100px', height: '100px' }}></img>
                 </div>
-                
             </div>
-        </body>
-    );
+    
+
+        </div>
+    )
 }
-export default TelaLogin;
+export default Login;
