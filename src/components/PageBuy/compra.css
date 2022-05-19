@@ -1,0 +1,48 @@
+.coluna1-coluna2{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#cor-card-coluna1{
+    width: 20rem;
+
+}
+
+.coluna2{
+    display: grid;
+
+}
+
+.Card-Linha{
+    display: grid;
+    margin-top: 6%;
+}
+
+#tamanho-card1{
+    width: 55rem;
+    height: 14rem;
+    background: #e0eeee;
+    border-radius: 2%;
+}
+.linha1-card{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+#img-cam{
+    width: 12rem;
+}
+.Imagem-cam{
+    margin-left: 5%;
+}
+
+.card-col{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    margin-left: 2rem;
+}
+.campo-situacao{
+    display: grid;
+    grid-template-columns: auto auto;
+}
