@@ -6,6 +6,7 @@ import styles from "../Paginainicial/pagina1.modules.css";
 import { withStyles } from '@material-ui/styles';
 import { green } from "@mui/material/colors";
 import { createTheme } from "@mui/material";
+import { Checkbox, FormControlLabel } from '@material-ui/core';
 import icons from 'material-icons';
 
 import moment from 'moment';
@@ -16,6 +17,17 @@ import carro from '../img/carro100x120.png';
 import moto from '../img/moto100x120.png';
 
 function PaginaIncial() {
+
+    const GreenCheckbox = withStyles({
+        root: {
+            color: green[900],
+            '&$checked': {
+                color: green[900],
+            },
+        },
+        checked: {},
+    })((props) => <Checkbox color="default" {...props} />);
+
 
     const theme = createTheme({
         palette: {
@@ -123,53 +135,57 @@ function PaginaIncial() {
                     <Button id='botao-veiculos'><i class="material-icons-outlined">directions_car</i></Button>
                     <Button id='botao-veiculos'><i class="material-icons-outlined">local_shipping</i></Button>
                 </div>
-                <div className="Marca">
-                    <p id="cor-titulo-veiculo"><strong>Marca</strong></p>
-                    <CssSelect
-                        placeholder="Marca"
-                        variant="standard"
-                        id="selecao"
+                <div className="Marca-e-Modelo">
+                    <div className="Marca">
+                        <p id="cor-titulo-veiculo"><strong>Marca</strong></p>
+                        <CssSelect
+                            placeholder="Marca"
+                            variant="standard"
+                            id="selecao"
 
-                    >
-                        <MenuItem>Selecione Opção</MenuItem>
-                    </CssSelect>
+                        >
+                            <MenuItem>Selecione Opção</MenuItem>
+                        </CssSelect>
+                    </div>
+                    <div className="modelo">
+                        <CssSelect placeholder="Modelo" variant="standard" id="selecao" >
+                            <MenuItem>Selecione Opção</MenuItem>
+                        </CssSelect>
+                    </div>
                 </div>
-                <div className="modelo">
-                    <CssSelect placeholder="Modelo" variant="standard" id="selecao" >
-                        <MenuItem>Selecione Opção</MenuItem>
-                    </CssSelect>
-                </div>
+
             </div>
 
-            <div className="campo-pesquisa-veiculo">
-                <div className="campo-data">
-                    <p id="cor-titulo-veiculo"><strong>Ano</strong></p>
-                    <CssTextField
-                        id='datalancamento'
-                        defaultValue=""
-                        onChange={onChange}
-                        locale={ptBR}
-                        dateFormat="P"
-                        withPortal
-                        variant="standard"
-                        type='date'
-                    />
-                </div>
-                <div className="data">
-                    <CssTextField
-                        className="data"
-                        id='datalancamento'
-                        onChange={onChange}
-                        locale={ptBR}
-                        dateFormat="P"
-                        withPortal
-                        variant="standard"
-                        type='date'
-                    />
+            <div className="campo-pesquisa-data">
+                <div className='campo-data-grid'>
+                    <div className="campo-data">
+                        <p id="cor-titulo-veiculo"><strong>Ano</strong></p>
+                        <CssTextField
+                            id='datalancamento'
+                            defaultValue=""
+                            onChange={onChange}
+                            locale={ptBR}
+                            dateFormat="P"
+                            withPortal
+                            variant="standard"
+                            type='date'
+                        />
+                    </div>
+                    <div className="data">
+                        <CssTextField
+                            className="data"
+                            id='datalancamento'
+                            onChange={onChange}
+                            locale={ptBR}
+                            dateFormat="P"
+                            withPortal
+                            variant="standard"
+                            type='date'
+                        />
+                    </div>
                 </div>
 
                 <div className="campo-preco">
-
                     <div className="minimo">
                         <p id="cor-titulo-veiculo"><strong>Preço</strong></p>
                         <CssTextField variant="standard" placeholder="R$ Min." id="tamanho"></CssTextField>
@@ -180,34 +196,41 @@ function PaginaIncial() {
                 </div>
             </div>
 
-            <div className="campo-pesquisa-veiculo">
-                <div className="checkbox-coluna1">
-                    <div className="part">
-                        <Input type="checkbox"></Input>
-                        <Label id="cor-check">Particular</Label>
-                    </div>
-                    <div className="part">
-                        <Input type="checkbox"></Input>
-                        <Label id="cor-check">Seminovo</Label>
-                    </div>
+            <div className="campo-pesquisa-checkbox">
+                <div className="part">
+                    <FormControlLabel
+                        control={<GreenCheckbox name="checkedG" />}
+                        label="Particular"
+                    />
+                </div>
+                <div className="part">
+                    <FormControlLabel
+                        control={<GreenCheckbox name="checkedG" />}
+                        label="SemiNovo"
+                    />
                 </div>
 
-                <div className="checkbox-coluna2">
-                    <div className="part1">
-                        <Input type="checkbox"></Input>
-                        <Label id="cor-check">Revenda</Label>
-                    </div>
-                    <div className="part1">
-                        <Input type="checkbox"></Input>
-                        <Label id="cor-check">Zero Km</Label>
-                    </div>
+
+                <div className="part1">
+                    <FormControlLabel
+                        control={<GreenCheckbox name="checkedG" />}
+                        label="Revenda"
+                    />
+                </div>
+                <div className="part1">
+                    <FormControlLabel
+                        control={<GreenCheckbox name="checkedG" />}
+                        label="Zero Km"
+                    />
                 </div>
 
-                <div className="campo-placa">
-                    <div className="pesquisa-botao">
-                        <CssTextField variant="standard" placeholder="Placa ou Código" id='tamanho-pesquisa'></CssTextField>
-                        <Button className="botao-pesquisar-placa" id="botao-placa" theme={theme}>Pesquisar</Button>
-                    </div>
+            </div>
+
+
+            <div className="campo-placa">
+                <div className="pesquisa-botao">
+                    <CssTextField variant="standard" className='csstext' placeholder="Placa ou Código" id='tamanho-pesquisa'></CssTextField>
+                    <Button className="botao-pesquisar-placa" id="botao-placa" theme={theme}>Pesquisar</Button>
                 </div>
             </div>
 
@@ -217,28 +240,28 @@ function PaginaIncial() {
                         <img className="Imagem" src={caminhao}></img>
                         <p id="descricao"><strong>Caminhão Tora <br /> Novo <br /> R$0.000,00 </strong></p>
                     </Card>
-                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme}>Comprar</Button>
+                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href='/paganuncio'>Comprar</Button>
                 </div>
                 <div className="Card">
                     <Card id='Cor' className="descricao-posicao">
                         <img className="Imagem" src={caminhao}></img>
                         <p id="descricao"><strong>Caminhão Tora <br /> Novo <br /> R$0.000,00 </strong></p>
                     </Card>
-                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme}>Comprar</Button>
+                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href='/paganuncio'>Comprar</Button>
                 </div>
                 <div className="Card">
                     <Card id='Cor' className="descricao-posicao">
                         <img className="Imagem" src={caminhao}></img>
                         <p id="descricao"><strong>Caminhão Tora <br /> Novo <br /> R$0.000,00 </strong></p>
                     </Card>
-                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme}>Comprar</Button>
+                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href='/paganuncio'>Comprar</Button>
                 </div>
                 <div className="Card">
                     <Card id='Cor' className="descricao-posicao">
                         <img className="Imagem" src={caminhao}></img>
                         <p id="descricao"><strong>Caminhão Tora <br /> Novo <br /> R$0.000,00 </strong></p>
                     </Card>
-                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme}>Comprar</Button>
+                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href='/paganuncio'>Comprar</Button>
                 </div>
 
             </div>

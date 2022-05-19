@@ -29,3 +29,15 @@
 .colunacard{
     display: grid;
 }
+
+@media only screen and (max-width: 768px){
+    .campos-sanfona{
+        display: grid;
+        margin-right: 9%;
+        margin-bottom: 5%;
+      
+    }
+    .coluna1-card{
+        margin: 7% 0 5% 5%;
+    }
+}

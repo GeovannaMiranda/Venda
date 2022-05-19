@@ -41,12 +41,20 @@
     justify-content: center;
     margin-top: 13%;
 }
+.texto-regra{
+    padding: 5%;
+}
 #texto{
     color: #708090;
     font-family: sans-serif;
 }
 .titulo-regra{
-    margin-left: 36%;
+    margin-left: 43%;
+    margin-bottom: -5%;
+}
+
+.titulo-regra1{
+    margin-left: 38%;
 }
 
 .campo-cards-planos{
@@ -54,10 +62,11 @@
     justify-content: center;
 }
 .campo-card-plano{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 6%;
     margin-top: 5%;
-    justify-content: space-between;
+    justify-content: center;
 
 }
 #cor-card-anuncio{
@@ -65,7 +74,7 @@
     width: 15rem;
 }
 .titulo-plano{
-    margin: 10% 0 0 33%;
+    margin: 10% 0 0 38%;
 }
 #cor-plano{
     color: #006400;
@@ -77,7 +86,110 @@
 #botao-plano{
     background: #006400;
     color: #ffff;
+    width: 8rem;
 }
-.botao-card{
+.botao-card-aderir{
     margin: 7% 0 0 18%;
 }
+
+
+@media only screen and (max-width: 768px){
+    #cor-card-anuncio1{
+        background: #C1FFC1;
+        width: 40rem;
+        height: 10rem;
+        border-radius: 10px;
+    }
+
+    #cor-card-anuncio{
+        background: #bebebe;
+        width: 15rem;
+        height: 10rem;
+        border-radius: 10px;
+    }
+    .titulo-plano{
+        margin: 11% 0 0 28%;
+    }
+    .campo-card-plano{
+        display: grid;
+        justify-self: center;
+        margin-top: 5%;
+        justify-content: space-between;
+    }
+    .botao-card{
+       display: grid;
+       justify-self: center;
+    }
+    #botao-plano{
+        background: #006400;
+        color: #ffff;
+        width: 9rem;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #cor-card-anuncio1{
+        background: #C1FFC1;
+        width: 35rem;
+        height: 10rem;
+        border-radius: 10px;
+    }
+    .campo-card-plano{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-top: 5%;
+        grid-gap: 8%;        
+    }
+    #cor-card-anuncio{
+        background: #bebebe;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 10px;
+    }
+    .titulo-plano{
+        margin: 11% 0 0 24%;
+    }
+    .card-conteudo{
+        display: grid;
+        align-items: center;
+        word-wrap: break-word;
+    }
+    .titulo-regra{
+        margin-left: 35%;
+        margin-bottom: -5%;
+    }
+    .texto-regra{
+        padding: 5%;
+    }
+    .titulo-regra1{
+        margin-left: 28% ;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #cor-card-anuncio1{
+        background: #C1FFC1;
+        width: 22rem;
+        height: 10rem;
+        border-radius: 10px;
+    }
+    .titulo-regra{
+        margin-left: 23%;
+    }
+    .titulo-plano{
+        margin: 11% 0 0 8%;
+    }
+    .campo-card-plano{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-top: 5%;
+        grid-gap: 6%;        
+    }
+    .card-an{
+        margin-right: 1rem;
+    }
+    .titulo-regra1{
+        margin-left: 15%;
+    }
+}
+

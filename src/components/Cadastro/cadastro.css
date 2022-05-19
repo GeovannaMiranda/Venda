@@ -30,3 +30,73 @@
     color: #ffff;
     background: #006400;
 }
+
+@media only screen and (max-width: 768px){
+    .card-cadastro{
+        display: grid;
+        justify-content: center;
+        background: #C1FFC1;
+        margin-top: 7%;
+        margin-left: 7%;
+        margin-bottom: 5%;
+    }
+    #cad-card{
+        width: 40rem;
+        height: 30rem;
+        border-radius: 5%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .card-cadastro{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        background: #C1FFC1;
+        margin-top: 7%;
+        margin-left: 9%;
+        margin-bottom: 5%;
+    }
+    #cad-card{
+        width: 30rem;
+        height: 30rem;
+        border-radius: 5%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .card-cadastro{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        background: #e0eeee;
+        margin-top: 7%;
+        margin-left: 9%;
+        margin-bottom: 5%;
+    }
+    #cad-card{
+        width: 20rem;
+        height: 55rem;
+        border-radius: 5%;
+    }
+    .linha1{
+        display: grid;
+        justify-content: center;
+    }
+    .titulo-card-cadastro{
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    #mui-theme-provider-standard-input{
+        width:  18rem;
+    }
+    .checkbox-termo{
+        margin: 3% 0 0 2.5rem;
+    }
+    #botao-cadastro{
+        width: 15rem;
+    }
+ 
+}
+
+

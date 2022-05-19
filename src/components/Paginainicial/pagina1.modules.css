@@ -24,12 +24,24 @@ h2{
 }
 .campo-pesquisa-veiculo{
     margin-top: 2%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+ 
+}
+.Marca-e-Modelo{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.campo-pesquisa-data{
+    margin-top: 2%;
     display: flex;
     justify-content: center;
  
 }
 .caixaselecao{
-    margin: 0 10% 0 0;
+    margin-right: 2rem;
 }
 .Marca{
     margin-top: -0.7%;
@@ -39,30 +51,36 @@ h2{
     width: 15rem;
 }
 .modelo{
-    margin-top: 3.5%;
+    margin-top: 3.5rem;
     margin-left: 2%;
 }
-.checkbox{
-    display: grid;
+
+
+#cor-check{
+    color: #9c9c9c;
 }
 
 .cor{
     color: #9c9c9c;
 }
+.campo-data-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
 .campo-data{
-    margin-left: 10%;
+    margin-left: 6.2rem;
     margin-top: -1%;
 }
 .data{
-    margin-left: 3%;
-    margin-top: 3.2%;
+    margin-left: 20%;
+    margin-top: 3.5rem;
 
 }
 
 .campo-preco{
     display: flex;
     margin-left: 13%;
-    margin-top: -1.7%;
+    margin-top: -0.7%;
 }
 
 .minimo{
@@ -71,36 +89,32 @@ h2{
 }
 
 .maximo{
-    margin-left: 4%;
-    margin-top: 14.5%;
+    margin-left: 5%;
+    margin-top: 16%;
 }
 #tamanho{
-    width: 13rem;
+    width: 12rem;
 
 }
 #tamanho-max{
-    width: 15rem;
+    width: 13rem;
 
 }
 
-.checkbox-coluna1{
-    display: grid;
-    margin-left: 19.5rem;
+.campo-placa{
+    display: flex;
+    margin-left: 17rem;
+    margin-top: 3%;
 }
-.checkbox-coluna2{
-    display: grid;
-    margin-right: 10rem;
-
-}
-
 
 #tamanho-pesquisa{
-    width: 22rem;
+    width: 43rem;
 
 }
 .botao-pesquisar-placa{
     color: #fff;    
     background: #006400;
+  
 }
 #botao-placa{
     color: #fff;
@@ -177,27 +191,13 @@ h2{
     justify-content: center;
 }
 
-#cor-check{
-    color: #9c9c9c;
-}
-.campo-placa{
-    display: flex;
-    margin-right: 30rem;
-  
-}
+
 .pesquisa-botao{
     display: flex;
 
 }
-.part{
-    display: flex;
-    margin-left: 5rem;
-   
-}
-.part1{
-    display: flex;
-    margin-left: 10rem;  
-}
+
+
 .Imagem{
     margin-top: 10%;
     transition: all 1.5s;
@@ -222,4 +222,259 @@ h2{
 .Card:hover{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+.campo-pesquisa-checkbox{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    grid-gap: 3%;
+}
+
+@media only screen and (max-width: 768px){
+    
+    .pesquisa{
+        display: grid;
+        justify-content: center;
+    }
+    #mui-theme-provider-outlined-input{
+        width: 40rem;
+        height: 2rem;
+    }
+    .campo-pesquisa-veiculo{
+        margin-top: 8%;
+        display: flex;
+        justify-content: center;
+    }
+    .caixaselecao{
+        justify-content: center; 
+    }
+    .Marca{
+        margin-top: -0.7%;
+        margin-left: -6%;
+    }
+    #selecao{
+        width: 11rem;
+    }
+    .modelo{
+        margin-top: 6.8%;
+        margin-left: 2%;
+    }
+    .campo-data{
+       justify-content: center;
+    }
+    #tamanho{
+        width: 9rem;
+    
+    }
+    #tamanho-max{
+        width: 9rem;
+    
+    }
+    .data{
+        margin-top: 6.3%;
+    }
+    .maximo{
+        margin-left: 5%;
+        margin-top: 21.8%;
+    }
+    .campo-placa{
+        display: flex;
+        margin-left: 4rem;
+        margin-top: 3%;
+    }
+    #tamanho-pesquisa{
+        width: 33rem;
+    
+    }
+    .campo-card{
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        justify-content: space-between;
+        padding: 5%;
+    }
+    .campo-cards{
+        display: flex;
+        justify-content: center;
+        margin-top: -6%;
+        justify-content: space-between;
+        padding: 5%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .pesquisa{
+        display: grid;
+        justify-content: center;
+    }
+    #mui-theme-provider-outlined-input{
+        width: 33rem;
+        height: 2rem;
+    }
+    .campo-pesquisa-veiculo{
+        margin-top: 8%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Marca{
+        margin-top: -0.7%;
+        margin-left: -6%;
+    }
+    #selecao{
+        width: 8rem;
+    }
+    .modelo{
+        margin-top: 8.9%;
+        margin-left: 2%;
+    }
+    
+    .campo-pesquisa-data{
+        margin-top: 2%;
+        display: grid;
+        justify-content: center;
+    
+    }
+    .campo-data-grid{
+        display: flex;
+        margin-right: 5rem;
+    }
+    .data{
+        margin-top: 10.1%;
+        
+    }
+    #datalancamento{
+        width: 16rem;
+    }
+   
+    #tamanho{
+        width: 15rem;
+    }
+    #tamanho-max{
+        width: 16rem;
+    }
+    .minimo{
+        margin-left: -9%;
+    }
+    .maximo{
+        margin-top: 13%;
+        margin-left: 6%;
+    }
+    #tamanho-pesquisa{
+        width: 26rem;
+    }
+    .campo-placa{
+        margin-left: 2rem;
+    }
+    .campo-card{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-self: start;
+        margin-top: 5%;
+        justify-content: space-between;
+        padding: 2%;
+    }
+    .campo-cards{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-self: start;
+        margin-top: 5%;
+        justify-content: space-between;
+        padding: 2%;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    .pesquisa{
+        display: grid;
+        justify-content: center;
+    }
+    #mui-theme-provider-outlined-input{
+        width: 20rem;
+        height: 2rem;
+    }
+    .caixaselecao{
+        display: grid;
+    }
+    .Marca-e-Modelo{
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-content: center;
+    }
+    .Marca{
+        margin-left: 0.3rem;
+    }
+    #selecao{
+        width: 12rem;
+    }
+    .campo-data-grid{
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        margin-left: 3.5rem;
+    }
+    #datalancamento{
+        width: 20rem;
+    }
+    .data{
+        margin-left: 1rem;
+    }
+    .campo-preco{
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+
+    #tamanho{
+        width: 20rem;
+    
+    }
+    #tamanho-max{
+        width: 20rem;
+    
+    }
+    .minimo{
+        margin-left: 0.7rem;
+    }
+    .maximo{
+        margin-left: 0.7rem;
+        margin-top: 8%;
+    }
+
+    .campo-pesquisa-checkbox{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .pesquisa-botao{
+        display: grid;
+        margin-bottom: 5%;
+    }
+   
+    #tamanho-pesquisa{
+        width: 20rem;
+    }
+    #botao-placa{
+        width: 15rem;
+    }
+    .botao-pesquisar-placa{
+        margin-top: 5rem;
+    }
+ 
+    .campo-card{
+        display: grid;
+        grid-template-columns: auto auto ;
+        justify-self: start;
+        margin-top: 5%;
+        justify-content: space-between;
+        padding: 2%;
+    }
+    .campo-cards{
+        display: grid;
+        grid-template-columns: auto auto ;
+        justify-self: start;
+        margin-top: 5%;
+        justify-content: space-between;
+        padding: 2%;
+    }
 }

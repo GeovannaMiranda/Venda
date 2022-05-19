@@ -8,7 +8,7 @@ import { Card } from 'reactstrap';
 import caminhao from '../img/caminhaotora.png';
 import caminhao2 from '../img/caminhaotora100x120.png';
 import { Button } from '@material-ui/core';
-import icnos from 'material-icons';
+import icons from 'material-icons';
 function PagAnuncio() {
 
 
@@ -38,15 +38,17 @@ function PagAnuncio() {
             <Menusuperior />
             <div>
                 <div className='campo-card-flex'>
-                    <Card className='card1'>
-                        <img src={caminhao2}></img>
-                        <img src={caminhao2}></img>
-                        <img src={caminhao2}></img>
-                    </Card>
-                    <Card>
-                        <img src={caminhao}></img>
+                    <div className='card-flex'>
+                        <Card className='card1'>
+                            <img src={caminhao2} id='tam-img'></img>
+                            <img src={caminhao2} id='tam-img'></img>
+                            <img src={caminhao2} id='tam-img'></img>
+                        </Card>
+                        <Card className='card2'>
+                            <img src={caminhao} id='tam-img-principal'></img>
 
-                    </Card>
+                        </Card>
+                    </div>
 
                     <div className='card-coluna3'>
                         <Card id='cor-card-paganuncio' >
@@ -74,7 +76,7 @@ function PagAnuncio() {
                 </div>
 
                 <div className='campo-card-flex'>
-                    <Card id="card-linha2">
+                    <Card id="card-linha2" className='card-coluna4'>
                         <div className='linha'>
                             <p>Quilometragem <br /> <strong>95.000 Km</strong></p>
                             <p>Câmbio <br /> <strong>Manual</strong></p>
@@ -94,7 +96,7 @@ function PagAnuncio() {
 
                     </Card>
 
-                    <div className='card-coluna4'>
+                    <div className='card-coluna5'>
                         <Card id='card-contato' >
                             <div className='p-card-contato'>
                                 <p style={{ color: '#006400' }}><strong>Entre em Contato</strong></p>
@@ -102,7 +104,7 @@ function PagAnuncio() {
                                 <p><strong>Dados do Vendedor<i class="material-icons right">face</i></strong></p>
                                 <p><i class="material-icons left">call</i>(DD) 0000 - 0000</p>
                                 <p><i class="material-icons left">call</i>(DD) 0000 - 0000</p>
-                                <p><i class="material-icons left">call</i>(DD) 0000 - 0000</p>
+
 
                                 <p><i class="material-icons left">mail</i>EmailVendedor@email.com</p>
                                 <p><i class="material-icons left">pin_drop</i> Contagem</p>

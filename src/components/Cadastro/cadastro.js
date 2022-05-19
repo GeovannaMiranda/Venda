@@ -50,7 +50,7 @@ function Cadastro() {
 
             <div className="divcard">
                 <Card className="card-cadastro" id="cad-card">
-                    <p id="pcard">Preencha os dados abaixo e clique no botão Cadastrar para criar seu cadastro!</p>
+                    <p id="pcard" className="titulo-card-cadastro">Preencha os dados abaixo e clique no botão Cadastrar para criar seu cadastro!</p>
                     <div className="linha1">
                         <StyleTextField
                             className="campo1"
@@ -141,14 +141,14 @@ function Cadastro() {
                         />
 
                     </div>
-                    <div>
+                    <div className="checkbox-termo">
                         <FormControlLabel
                             control={<GreenCheckbox name="checkedG" />}
                             label="Li e aceito os termos de responsabilidade. "
                             required
                         />
                     </div>
-                    <div>
+                    <div className="checkbox-termo">
                         <FormControlLabel
                             control={<GreenCheckbox name="checkedG" />}
                             label="Vendedor"
@@ -158,7 +158,7 @@ function Cadastro() {
                             label="Comprador"
                         />
 
-                        <Button id="botao-cadastro">Cadastrar</Button>
+                        <Button  id="botao-cadastro">Cadastrar</Button>
                     </div>
                 </Card>
             </div>

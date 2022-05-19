@@ -33,3 +33,26 @@ body{
 .entrar{
     margin-top: -1%;
 }
+
+@media only screen and (max-width: 768px){
+    .menu{
+        display: flex;
+        justify-content: end;
+        margin-left: 12rem;
+        margin-top: -7%;
+        justify-content: space-evenly;
+    }
+    .entrar{
+        margin-top: -2%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .menu{
+        display: flex;
+        justify-content: end;
+        margin-left: 7rem;
+        margin-top: -7%;
+        justify-content: space-evenly;
+    }
+}

@@ -17,13 +17,13 @@ function Anuncie() {
 
             <div className='campo-regra'>
                 <h2 className="titulo-regra">Como Funciona?</h2>
-                <p className='texto-regra' id='texto'>Lorem ipsum lobortis lacinia ligula pulvinar per interdum, pulvinar placerat <br />donec vitae et habitant
-                    sociosqu, netus vulputate quam himenaeos aptent erat. <br />egestas tristique iaculis arcu nullam mattis fusce augue,
+                <p className='texto-regra' id='texto'>Lorem ipsum lobortis lacinia ligula pulvinar per interdum, pulvinar placerat donec vitae et habitant
+                    sociosqu, netus vulputate quam himenaeos aptent erat. egestas tristique iaculis arcu nullam mattis fusce augue,
                     tempor tortor phasellus nisl
-                    <br />ultricies fringilla tristique egestas, ultrices <br />venenatis eu accumsan est habitant. eros bibendum class nulla
-                    torquent sodales integer  <br />ante, suscipit duis scelerisque <br /> justo conubia commodo conubia vitae,
-                    hendrerit metus vivamus gravida sem quis. molestie  <br />inceptos consectetur egestas <br /> faucibus curabitur
-                    pulvinar quam faucibus netus, mollis sagittis viverra  <br />augue integer rhoncus velit rhoncus dapibus per,
+                    ultricies fringilla tristique egestas, ultrices venenatis eu accumsan est habitant. eros bibendum class nulla
+                    torquent sodales integer ante, suscipit duis scelerisque justo conubia commodo conubia vitae,
+                    hendrerit metus vivamus gravida sem quis. molestie  inceptos consectetur egestas  faucibus curabitur
+                    pulvinar quam faucibus netus, mollis sagittis viverra augue integer rhoncus velit rhoncus dapibus per,
                     elit amet interdum feugiat porta etiam lorem interdum.
                 </p>
             </div>
@@ -33,14 +33,23 @@ function Anuncie() {
                 <div className='campo-card-plano'>
                     <div >
                         <Card id='cor-card-anuncio' className='card-an'>
-                            <p id='cor-plano'>Lorem ipsum lobortis <br />
-                                per interdum, pulvinar<br />
-                                et habitant sociosqu<br />
-                                uam himenaeos aptent.<br />
+                            <p id='cor-plano' className='card-conteudo'>Lorem ipsum lobortis
+                                per interdum, pulvinar
+                                et habitant sociosqu
+                                uam himenaeos aptent.
                             </p>
                         </Card>
-                        <Button id='botao-plano' className='botao-card'>Aderir</Button>
-
+                        <Button id='botao-plano' className='botao-card-aderir'>Aderir</Button>
+                    </div>
+                    <div>
+                        <Card id='cor-card-anuncio' className='card-an'>
+                            <p id='cor-plano'>Lorem ipsum lobortis 
+                                per interdum, pulvinar
+                                et habitant sociosqu
+                                uam himenaeos aptent.
+                            </p>
+                        </Card>
+                        <Button id='botao-plano' className='botao-card-aderir'>Aderir</Button>
                     </div>
                     <div>
                         <Card id='cor-card-anuncio' className='card-an'>
@@ -50,7 +59,7 @@ function Anuncie() {
                                 uam himenaeos aptent.<br />
                             </p>
                         </Card>
-                        <Button id='botao-plano' className='botao-card'>Aderir</Button>
+                        <Button id='botao-plano' className='botao-card-aderir'>Aderir</Button>
                     </div>
                     <div>
                         <Card id='cor-card-anuncio' className='card-an'>
@@ -60,35 +69,29 @@ function Anuncie() {
                                 uam himenaeos aptent.<br />
                             </p>
                         </Card>
-                        <Button id='botao-plano' className='botao-card'>Aderir</Button>
-                    </div>
-                    <div>
-                        <Card id='cor-card-anuncio' className='card-an'>
-                            <p id='cor-plano'>Lorem ipsum lobortis <br />
-                                per interdum, pulvinar<br />
-                                et habitant sociosqu<br />
-                                uam himenaeos aptent.<br />
-                            </p>
-                        </Card>
-                        <Button id='botao-plano' className='botao-card'>Aderir</Button>
+                        <Button id='botao-plano' className='botao-card-aderir'>Aderir</Button>
                     </div>
                 </div>
                 <div className='campo-regra'>
-                <h2 className="titulo-regra">Regras do seu anuncio</h2>
-                <p className='texto-regra' id='texto'>Lorem ipsum lobortis lacinia ligula pulvinar per interdum, pulvinar placerat <br />donec vitae et habitant
-                    sociosqu, netus vulputate quam himenaeos aptent erat. <br />egestas tristique iaculis arcu nullam mattis fusce augue,
+                <h2 className="titulo-regra1">Regras do seu anuncio</h2>
+                <p className='texto-regra' id='texto'>Lorem ipsum lobortis lacinia ligula pulvinar per interdum, pulvinar placerat donec vitae et habitant
+                    sociosqu, netus vulputate quam himenaeos aptent erat. egestas tristique iaculis arcu nullam mattis fusce augue,
                     tempor tortor phasellus nisl
-                    <br />ultricies fringilla tristique egestas, ultrices <br />venenatis eu accumsan est habitant. eros bibendum class nulla
-                    torquent sodales integer  <br />ante, suscipit duis scelerisque <br /> justo conubia commodo conubia vitae,
-                    hendrerit metus vivamus gravida sem quis. molestie  <br />inceptos consectetur egestas <br /> faucibus curabitur
-                    pulvinar quam faucibus netus, mollis sagittis viverra  <br />augue integer rhoncus velit rhoncus dapibus per,
+                    ultricies fringilla tristique egestas, ultrices venenatis eu accumsan est habitant. eros bibendum class nulla
+                    torquent sodales integer ante, suscipit duis scelerisque justo conubia commodo conubia vitae,
+                    hendrerit metus vivamus gravida sem quis. molestie  inceptos consectetur egestas  faucibus curabitur
+                    pulvinar quam faucibus netus, mollis sagittis viverra augue integer rhoncus velit rhoncus dapibus per,
                     elit amet interdum feugiat porta etiam lorem interdum.
                 </p>
             </div>
             </div>
 
             
-            <footer id='rodape-anunicie'></footer>
+            <footer id="cor-footer" className="Rodape">
+                    <p id="fonte">13 de Maio de 2022</p>
+                    <p id="fonte">email@email.com.br</p>
+                    <p id="fonte">(31) XXXX - XXXX</p>
+                </footer>
         </div>
     )
 }

@@ -15,7 +15,7 @@ const Menusuperior = (props) => {
                 </DropdownMenu>
 
                 <DropdownMenu >
-                    <DropdownItem id="drop" href="paganuncio">Compre</DropdownItem>
+                    <DropdownItem id="drop" href="compraveiculo">Compre</DropdownItem>
                 </DropdownMenu>
                 
                 <DropdownMenu>
