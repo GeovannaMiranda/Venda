@@ -14,7 +14,7 @@ import { ptBR } from 'date-fns/locale'
 
 import caminhao from '../img/caminhaotora100x120.png';
 import carro from '../img/carro100x120.png';
-import moto from '../img/moto100x120.png';
+import carreta from '../img/carreta100x110.png';
 
 function PaginaIncial() {
 
@@ -131,7 +131,7 @@ function PaginaIncial() {
             <div className="campo-pesquisa-veiculo">
                 <div className="caixaselecao">
                     <p id="cor-titulo-veiculo"><strong>Veículo</strong></p>
-                    <Button id='botao-veiculos'><i class="material-icons-outlined">two_wheeler</i></Button>
+                    <Button id='botao-veiculos'><i class="material-icons-outlined">local_shipping</i></Button>
                     <Button id='botao-veiculos'><i class="material-icons-outlined">directions_car</i></Button>
                     <Button id='botao-veiculos'><i class="material-icons-outlined">local_shipping</i></Button>
                 </div>
@@ -272,14 +272,14 @@ function PaginaIncial() {
                         <img className="Imagem" src={carro}></img>
                         <p id="descricao"><strong>Carro Tora <br /> Seminovo <br /> R$0.000,00 </strong></p>
                     </Card>
-                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme}>Comprar</Button>
+                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href="/paganunciocarro">Comprar</Button>
                 </div>
                 <div className="Card">
                     <Card id='Cor' className="descricao-posicao">
                         <img className="Imagem" src={carro}></img>
                         <p id="descricao"><strong>Carro Tora <br /> Seminovo <br /> R$0.000,00 </strong></p>
                     </Card>
-                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme}>Comprar</Button>
+                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href="/paganunciocarro">Comprar</Button>
 
                 </div>
                 <div className="Card">
@@ -287,7 +287,7 @@ function PaginaIncial() {
                         <img className="Imagem" src={carro}></img>
                         <p id="descricao"><strong>Carro Tora <br /> Seminovo <br /> R$0.000,00 </strong></p>
                     </Card>
-                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme}>Comprar</Button>
+                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href="/paganunciocarro">Comprar</Button>
 
                 </div>
                 <div className="Card">
@@ -295,7 +295,7 @@ function PaginaIncial() {
                         <img className="Imagem" src={carro}></img>
                         <p id="descricao"><strong>Carro Tora <br /> Seminovo <br /> R$0.000,00 </strong></p>
                     </Card>
-                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme}>Comprar</Button>
+                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href="/paganunciocarro">Comprar</Button>
                 </div>
 
             </div>
@@ -303,32 +303,32 @@ function PaginaIncial() {
             <div className="campo-cards">
                 <div className="Card">
                     <Card id='Cor' className="descricao-posicao">
-                        <img className="Imagem" src={moto}></img>
-                        <p id="descricao"><strong>Moto Tora <br /> Revenda <br /> R$0.000,00 </strong></p>
+                        <img className="Imagem" src={carreta}></img>
+                        <p id="descricao"><strong>Carreta Tora <br /> Revenda <br /> R$0.000,00 </strong></p>
                     </Card>
-                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme}>Comprar</Button>
+                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href="/paganunciocarreta">Comprar</Button>
 
                 </div>
                 <div className="Card">
                     <Card id='Cor' className="descricao-posicao">
-                        <img className="Imagem" src={moto}></img>
-                        <p id="descricao"><strong>Moto Tora <br /> Revenda <br /> R$0.000,00 </strong></p>
+                        <img className="Imagem" src={carreta}></img>
+                        <p id="descricao"><strong>Carreta Tora <br /> Revenda <br /> R$0.000,00 </strong></p>
                     </Card>
-                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme}>Comprar</Button>
+                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href="/paganunciocarreta">Comprar</Button>
                 </div>
                 <div className="Card">
                     <Card id='Cor' className="descricao-posicao">
-                        <img className="Imagem" src={moto}></img>
-                        <p id="descricao"><strong>Moto Tora <br /> Revenda <br /> R$0.000,00 </strong></p>
+                        <img className="Imagem" src={carreta}></img>
+                        <p id="descricao"><strong>Carreta Tora <br /> Revenda <br /> R$0.000,00 </strong></p>
                     </Card>
-                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme}>Comprar</Button>
+                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href="/paganunciocarreta">Comprar</Button>
                 </div>
                 <div className="Card">
                     <Card id='Cor' className="descricao-posicao">
-                        <img className="Imagem" src={moto}></img>
-                        <p id="descricao"><strong>Moto Tora <br /> Revenda <br /> R$0.000,00 </strong></p>
+                        <img className="Imagem" src={carreta}></img>
+                        <p id="descricao"><strong>Carreta Tora <br /> Revenda <br /> R$0.000,00 </strong></p>
                     </Card>
-                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme}>Comprar</Button>
+                    <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href="/paganunciocarreta">Comprar</Button>
                 </div>
 
             </div>

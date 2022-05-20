@@ -8,7 +8,7 @@ import { green } from "@mui/material/colors";
 import { createTheme } from "@mui/material";
 import caminhao from '../img/caminhaotora100x120.png';
 import carro from '../img/carro100x120.png';
-import moto from '../img/moto100x120.png';
+import carreta from '../img/carreta100x110.png';
 
 import style from "../PageBuy/compra.css";
 
@@ -56,12 +56,19 @@ function ComprarVeiculo() {
             <Menusuperior />
             <div className="coluna1-coluna2">
                 <Card id='cor-card-coluna1'>
+
                     <div className="card-col">
+                        <p style={{color: '#006400'}} ><strong>Veículo</strong></p>
+                        <div className="botoes-opcao">                           
+                            <Button id='botao-veiculos'>Carro</Button>
+                            <Button id='botao-veiculos'>Caminhao</Button>
+                            <Button id='botao-veiculos'>Carreta</Button>
+                        </div>
                         <CssTextField
                             label="Localização"
                             placeholder="Digite o nome da sua cidade"
                         />
-                        <p><strong>Marca do Veículo</strong></p>
+                        <p style={{color: '#006400'}} ><strong>Marca do Veículo</strong></p>
                         <div>
                             <CssTextField
                                 label="Selecione a Marca"
@@ -71,7 +78,7 @@ function ComprarVeiculo() {
                             />
                         </div>
 
-                        <p><strong>Ano Modelo</strong></p>
+                        <p style={{color: '#006400'}} ><strong>Ano Modelo</strong></p>
                         <CssTextField
                             label="De"
                         />
@@ -79,7 +86,7 @@ function ComprarVeiculo() {
                             label="Até"
                         />
 
-                        <p><strong>Preço</strong></p>
+                        <p style={{color: '#006400'}} ><strong>Preço</strong></p>
                         <div>
                             <CssTextField
                                 label="Min"
@@ -98,7 +105,7 @@ function ComprarVeiculo() {
                             />
                         </div>
 
-                        <p><strong>Quilometragem</strong></p>
+                        <p style={{color: '#006400'}} ><strong>Quilometragem</strong></p>
                         <CssTextField
                             label="Min"
                         />
@@ -106,7 +113,7 @@ function ComprarVeiculo() {
                             label="Máx"
                         />
 
-                        <p><strong>Situação</strong></p>
+                        <p style={{color: '#006400'}} ><strong>Situação</strong></p>
                         <div className="campo-situacao">
                             <FormControlLabel
                                 control={<GreenCheckbox name="checkedG" />}
@@ -118,7 +125,7 @@ function ComprarVeiculo() {
                             />
                         </div>
 
-                        <p><strong>Câmbio</strong></p>
+                        <p style={{color: '#006400'}} ><strong>Câmbio</strong></p>
                         <FormControlLabel
                             control={<GreenCheckbox name="checkedG" />}
                             label="Automatico"
@@ -132,20 +139,20 @@ function ComprarVeiculo() {
                             label="Automatizado"
                         />
 
-                        <p><strong>Vendedor</strong></p>
+                        <p style={{color: '#006400'}} ><strong>Vendedor</strong></p>
                         <div className="campo-situacao">
-                        <FormControlLabel
-                            control={<GreenCheckbox name="checkedG" />}
-                            label="Particular"
-                        />
-                        <FormControlLabel
-                            control={<GreenCheckbox name="checkedG" />}
-                            label="Revenda"
-                        />
+                            <FormControlLabel
+                                control={<GreenCheckbox name="checkedG" />}
+                                label="Particular"
+                            />
+                            <FormControlLabel
+                                control={<GreenCheckbox name="checkedG" />}
+                                label="Revenda"
+                            />
                         </div>
 
 
-                        <p><strong>Característica</strong></p>
+                        <p style={{color: '#006400'}} ><strong>Característica</strong></p>
                         <FormControlLabel
                             control={<GreenCheckbox name="checkedG" />}
                             label="Aceita Troca"
@@ -155,28 +162,30 @@ function ComprarVeiculo() {
                             label="IPVA Pago"
                         />
 
-                        <p><strong>Pode ser financiado?</strong></p>
-                        <FormControlLabel
-                            control={<GreenCheckbox name="checkedG" />}
-                            label="Sim"
-                        />
-                        <FormControlLabel
-                            control={<GreenCheckbox name="checkedG" />}
-                            label="Não"
-                        />
+                        <p style={{color: '#006400'}} ><strong>Pode ser financiado?</strong></p>
+                        <div>
+                            <FormControlLabel
+                                control={<GreenCheckbox name="checkedG" />}
+                                label="Sim"
+                            />
+                            <FormControlLabel
+                                control={<GreenCheckbox name="checkedG" />}
+                                label="Não"
+                            />
+                        </div>
+                        <p style={{color: '#006400'}} ><strong>Financiamento em aberto?</strong></p>
+                        <div className="campo-situacao">
+                            <FormControlLabel
+                                control={<GreenCheckbox name="checkedG" />}
+                                label="Sim"
+                            />
+                            <FormControlLabel
+                                control={<GreenCheckbox name="checkedG" />}
+                                label="Não"
+                            />
+                        </div>
 
-                        <p><strong>Financiamento em aberto?</strong></p>
-                        <FormControlLabel
-                            control={<GreenCheckbox name="checkedG" />}
-                            label="Sim"
-                        />
-                        <FormControlLabel
-                            control={<GreenCheckbox name="checkedG" />}
-                            label="Não"
-                        />
-
-
-                        <p><strong>Passagem por Leilão?</strong></p>
+                        <p style={{color: '#006400'}} ><strong>Passagem por Leilão?</strong></p>
                         <FormControlLabel
                             control={<GreenCheckbox name="checkedG" />}
                             label="Com passagem"
@@ -186,32 +195,32 @@ function ComprarVeiculo() {
                             label="Sem passagem"
                         />
 
-                        <p><strong>Motor</strong></p>
+                        <p style={{color: '#006400'}} ><strong>Motor</strong></p>
                         <CssTextField
                             placeholder="Selecione Opção"
                         />
 
 
-                        <p><strong>Combustível</strong></p>
-                        <CssTextField
-                            placeholder="Selecione Opção"
-                        />
-
-
-
-                        <p><strong>Cor</strong></p>
+                        <p style={{color: '#006400'}} ><strong>Combustível</strong></p>
                         <CssTextField
                             placeholder="Selecione Opção"
                         />
 
 
 
-                        <p><strong>Porta</strong></p>
+                        <p style={{color: '#006400'}} ><strong>Cor</strong></p>
                         <CssTextField
                             placeholder="Selecione Opção"
                         />
 
-                        <Button>Aplicar Filtro</Button>
+
+
+                        <p style={{color: '#006400'}} ><strong>Porta</strong></p>
+                        <CssTextField
+                            placeholder="Selecione Opção"
+                        />
+
+                        <Button style={{color: '#ffff', background: '#006400', marginTop: '8%'}}>Aplicar Filtro</Button>
                     </div>
                 </Card>
                 <Card>
@@ -248,69 +257,75 @@ function ComprarVeiculo() {
                         <div className="Card-Linha">
                             <Card id="tamanho-card1" className="linha1-card">
                                 <img className="Imagem-cam" id="img-cam" src={carro}></img>
-                                <p ><strong>Caminhão Tora  Novo  R$0.000,00 </strong></p>
-                                <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href='/paganuncio'>Comprar</Button>
+                                <p ><strong>Carro Tora  Novo  R$0.000,00 </strong></p>
+                                <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href='/paganunciocarro'>Comprar</Button>
                             </Card>
                         </div>
 
                         <div className="Card-Linha">
                             <Card id="tamanho-card1" className="linha1-card">
                                 <img className="Imagem-cam" id="img-cam" src={carro}></img>
-                                <p ><strong>Caminhão Tora  Novo  R$0.000,00 </strong></p>
-                                <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href='/paganuncio'>Comprar</Button>
+                                <p ><strong>Carro Tora  Novo  R$0.000,00 </strong></p>
+                                <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href='/paganunciocarro'>Comprar</Button>
                             </Card>
                         </div>
 
                         <div className="Card-Linha">
                             <Card id="tamanho-card1" className="linha1-card">
                                 <img className="Imagem-cam" id="img-cam" src={carro}></img>
-                                <p ><strong>Caminhão Tora  Novo  R$0.000,00 </strong></p>
-                                <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href='/paganuncio'>Comprar</Button>
+                                <p ><strong>Carro Tora  Novo  R$0.000,00 </strong></p>
+                                <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href='/paganunciocarro'>Comprar</Button>
                             </Card>
                         </div>
 
                         <div className="Card-Linha">
                             <Card id="tamanho-card1" className="linha1-card">
                                 <img className="Imagem-cam" id="img-cam" src={carro}></img>
-                                <p ><strong>Caminhão Tora  Novo  R$0.000,00 </strong></p>
-                                <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href='/paganuncio'>Comprar</Button>
+                                <p ><strong>Carro Tora  Novo  R$0.000,00 </strong></p>
+                                <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href='/paganunciocarro'>Comprar</Button>
                             </Card>
                         </div>
 
                         <div className="Card-Linha">
                             <Card id="tamanho-card1" className="linha1-card">
-                                <img className="Imagem-cam" id="img-cam" src={moto}></img>
-                                <p ><strong>Caminhão Tora  Novo  R$0.000,00 </strong></p>
-                                <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href='/paganuncio'>Comprar</Button>
+                                <img className="Imagem-cam" id="img-cam" src={carreta}></img>
+                                <p ><strong>Carreta Tora  Novo  R$0.000,00 </strong></p>
+                                <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href='/paganunciocarreta'>Comprar</Button>
                             </Card>
                         </div>
 
                         <div className="Card-Linha">
                             <Card id="tamanho-card1" className="linha1-card">
-                                <img className="Imagem-cam" id="img-cam" src={moto}></img>
-                                <p ><strong>Caminhão Tora  Novo  R$0.000,00 </strong></p>
-                                <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href='/paganuncio'>Comprar</Button>
+                                <img className="Imagem-cam" id="img-cam" src={carreta}></img>
+                                <p ><strong>Carreta Tora  Novo  R$0.000,00 </strong></p>
+                                <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href='/paganunciocarreta'>Comprar</Button>
                             </Card>
                         </div>
 
                         <div className="Card-Linha">
                             <Card id="tamanho-card1" className="linha1-card">
-                                <img className="Imagem-cam" id="img-cam" src={moto}></img>
-                                <p ><strong>Caminhão Tora  Novo  R$0.000,00 </strong></p>
-                                <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href='/paganuncio'>Comprar</Button>
+                                <img className="Imagem-cam" id="img-cam" src={carreta}></img>
+                                <p ><strong>Carreta Tora  Novo  R$0.000,00 </strong></p>
+                                <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href='/paganunciocarreta'>Comprar</Button>
                             </Card>
                         </div>
 
                         <div className="Card-Linha">
                             <Card id="tamanho-card1" className="linha1-card">
-                                <img className="Imagem-cam" id="img-cam" src={moto}></img>
-                                <p ><strong>Caminhão Tora  Novo  R$0.000,00 </strong></p>
-                                <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href='/paganuncio'>Comprar</Button>
+                                <img className="Imagem-cam" id="img-cam" src={carreta}></img>
+                                <p ><strong>Carreta Tora  Novo  R$0.000,00 </strong></p>
+                                <Button style={{ margin: '0 0 0 22%' }} id="botao-car1" theme={theme} href='/paganunciocarreta'>Comprar</Button>
                             </Card>
                         </div>
                     </div>
                 </Card>
+                <footer id="cor-footer" className="Rodape">
+                <p id="fonte">13 de Maio de 2022</p>
+                <p id="fonte">email@email.com.br</p>
+                <p id="fonte">(31) XXXX - XXXX</p>
+            </footer>
             </div>
+          
         </div>
     )
 }

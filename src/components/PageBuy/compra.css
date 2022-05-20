@@ -2,7 +2,10 @@
     display: grid;
     grid-template-columns: auto auto;
 }
-
+.botoes-opcao{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
 #cor-card-coluna1{
     width: 20rem;
 
@@ -41,8 +44,55 @@
     grid-template-columns: auto;
     justify-content: center;
     margin-left: 2rem;
+    margin-top: 3rem;
 }
 .campo-situacao{
     display: grid;
     grid-template-columns: auto auto;
+}
+@media only screen and (max-width: 768px){
+    .coluna1-coluna2{
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+
+    #cor-card-coluna1{
+        width: 18rem;
+    }
+    #tamanho-card1{
+        width: 25rem;
+        height: 20rem;
+        background: #e0eeee;
+        border-radius: 2%;
+    }
+    .linha1-card{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #tamanho-card1{
+        width: 18rem;
+        height: 20rem;
+        background: #e0eeee;
+        border-radius: 2%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .coluna1-coluna2{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #cor-card-coluna1{
+        width: 18rem;
+    }
+    .Card-Linha{
+        margin-left: 5rem;
+    }
+    .card-col{
+        margin-left: 8rem;
+    }
 }
